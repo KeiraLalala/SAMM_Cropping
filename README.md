@@ -1,7 +1,10 @@
 # SAMM_Cropping
-This project is used to crop the micro-expression samples from the SAMM dataset by using the Pytorch face-alignment and Local Weighted Mean(LWM) transformation.
+This project face_alignment (**https://github.com/1adrianb/face-alignment
+**) to crop the micro-expression samples from the SAMM dataset by using the Pytorch face-alignment and Local Weighted Mean(LWM) transformation.
 
 There is one Example file (**Example_face_alignment.ipynb**) to show how the library detect the 68 facial point, and a file that crop samples of one video (**LWM_crop.ipynb**)
+
+I tried using only three facial landmarks - the inner eyes and the tip of the nose(point index are: 39,42,30 - but it seems that using all 68 landmarks provides better output.
 
 Beside, I also tried to use the Dlib to do the normalization work without LWM, but the performance is not so ideal.
 
